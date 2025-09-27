@@ -1,0 +1,112 @@
+#container {
+  max-width: 1000px;
+  margin: auto;
+  padding: 2rem;
+  background: #f8f9fa;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+#talking {
+  padding: 1rem;
+  background: #fff3cd;
+  border: 1px solid #ffeeba;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  color: #856404;
+  box-shadow: rgba(255, 216, 74, 0.2) 0px 2px 8px 0px;
+}
+
+#setup {
+  padding: 1rem;
+  background: #d1ecf1;
+  border: 1px solid #d6d8db;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  max-height: 700px;
+  color: #383d41;
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  align-items: center;
+  box-shadow: rgba(86, 255, 131, 0.2) 0px 2px 8px 0px;
+
+  max-width: 650px;
+  width: 75%;
+  height: 350px;
+}
+
+#sorter {
+  padding: 1rem;
+  background: #d1ecf1;
+  border: 1px solid #bee5eb;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  color: #0c5460;
+  overflow: scroll;
+  box-shadow: rgba(132, 170, 206, 0.2) 0px 2px 8px 0px;
+
+  min-width: 350px;
+  width: 25%;
+  height: 350px;
+}
+
+.slice-item {
+  padding: 1rem;
+  background: #93b2c2;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  color: #122230;
+}
+
+#submission {
+  padding: 1rem;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  color: #155724;
+}
+
+#adjustSize {
+  padding: 1rem;
+  background-color: #d4edda;
+  border: 1px solid #c3e6cb;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+  color: #155724;
+}
+
+#exportPiechartDivWrapper {
+  min-width: 150px;
+  min-height: 150px;
+  width: 300px;
+  height: 300px;
+}
+
+.pieSlice {
+  min-width: 150px;
+  min-height: 150px;
+  width: 300px;
+  height: 300px;
+  max-width: 500px;
+  max-height: 500px;
+  position: absolute;
+}
+
+#exportBox {
+  height: 500px;
+  overflow: auto;
+  white-space: pre-wrap;
+  
+  padding: 1rem;
+  background: #d1ecf1;
+  border: 1px solid #bee5eb;
+  border-radius: 0.25rem;
+  margin-bottom: 1rem;
+}
+
+#dividePoint,
+#sliceImageUrl {
+  max-width: 150px; 
+}

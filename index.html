@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- mine-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+
+    <!-- coloris-->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.css"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="talking">this is my world</div>
+      <div
+        style="
+          display: flex;
+          gap: 5%;
+          justify-content: center;
+          overflow: hidden;
+        "
+      >
+        <div id="setup">
+          <div id="exportPiechartDivWrapper"></div>
+        </div>
+        <div id="sorter"></div>
+      </div>
+      <div id="submission">
+        <form>
+          <div class="form-group d-flex">
+            <label for="dividePoint" class="mr-2">divide point</label>
+            <input
+              type="number"
+              class="form-control"
+              id="dividePoint"
+              name="dividePoint"
+              min="1"
+              max="100"
+              placeholder="100"
+              required
+            />
+          </div>
+
+          <div class="form-group d-flex">
+            <label for="colorSlice" class="mr-2">slice color</label>
+            <input
+              type="text"
+              class="form-control"
+              id="colorSlice"
+              name="colorSlice"
+              value="#FF0000"
+              required
+              data-coloris
+            />
+          </div>
+
+          <div class="form-group d-flex">
+            <label for="sliceImageUrl" class="mr-2">(optional) image url</label>
+            <input
+              type="url"
+              class="form-control"
+              id="sliceImageUrl"
+              name="sliceImageUrl"
+              placeholder="https://example.com/image.png"
+            />
+          </div>
+
+          <div class="d-flex justify-content-between">
+            <input
+              type="submit"
+              id="submitButton"
+              value="Submit"
+              class="btn btn-success"
+            />
+            <input
+              type="button"
+              id="clearButton"
+              value="Clear"
+              class="btn btn-danger"
+            />
+          </div>
+        </form>
+      </div>
+
+      <div id="adjustSize">
+        <form id="sizeForm">
+          <label for="exportPieChartSize">size of chart: </label>
+          <input
+            type="number"
+            id="exportPieChartSize"
+            name="exportPieChartSize"
+            placeholder="300"
+            step="10"
+            required
+          />
+          <button type="submit" id="submitSizeButton" class="btn btn-info">
+            apply
+          </button>
+        </form>
+      </div>
+
+      <div id="export">
+        <pre id="exportBox" class="p-3 border bg-light"></pre>
+        <button id="copyButton" class="btn btn-primary mt-2">copy :3</button>
+      </div>
+
+      <div id="output"></div>
+
+      <!-- boostrap-->
+      <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+      <!-- coloris -->
+      <script src="https://cdn.jsdelivr.net/gh/mdbassit/Coloris@latest/dist/coloris.min.js"></script>
+
+      <!-- mine lol-->
+      <script src="script.js"></script>
+
+      <!-- autoanimate-->
+      <script type="module">
+        import autoAnimate from "https://cdn.jsdelivr.net/npm/@formkit/auto-animate";
+        autoAnimate(document.getElementById("sorter")); //i rlly hate this but importing is not cooperating and idc to figure out why
+        autoAnimate(document.getElementById("exportPiechartDivWrapper"));
+      </script>
+    </div>
+  </body>
+</html>
