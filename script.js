@@ -191,6 +191,7 @@ function updateSliceListUI() {
 function createSliceDiv(slice) {
   exportPiechartDiv.style.width = `${exportPieChartSize}px`;
   exportPiechartDiv.style.height = `${exportPieChartSize}px`;
+  exportPiechartDiv.style.display = "inline-block";
 
   const div = document.createElement("div");
   div.className = "pieSlice";
@@ -217,6 +218,7 @@ function createSliceDiv(slice) {
 function resizeAllSlices() {
   exportPiechartDiv.style.width = `${exportPieChartSize}px`;
   exportPiechartDiv.style.height = `${exportPieChartSize}px`;
+  exportPiechartDiv.style.display = "inline-block";
 
   listOfSlices.forEach((slice) => {
     if (slice.div) {

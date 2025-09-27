@@ -31,8 +31,6 @@
   align-items: center;
   box-shadow: rgba(86, 255, 131, 0.2) 0px 2px 8px 0px;
 
-  max-width: 650px;
-  width: 75%;
   height: 350px;
 }
 
@@ -46,9 +44,8 @@
   overflow: scroll;
   box-shadow: rgba(132, 170, 206, 0.2) 0px 2px 8px 0px;
 
-  min-width: 350px;
-  width: 25%;
   height: 350px;
+  max-height: 350px;
 }
 
 .slice-item {
