@@ -1,5 +1,4 @@
 # piechart-maker
 piechart maker for toyhouse
 
-admin please whitelist conic-gradient..........................
-anyway looooooooooooooooooooooooook its pretty now prettier than my other one #cute ill add colors to the other one later
+its a piechart maker but using clip-path. why clip-path? Because conic-gradient isnt  whitelisted on toyhouse 😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭😭Admin please 
